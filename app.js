@@ -24,14 +24,11 @@ app.use('/home',homeRouter);
 app.use('/books',booksRouter); 
 app.use('/authors',authorsRouter); 
 
-
-
 app.get('/',function(req,res){
 
     res.render('index',{});
     
 });
-
 
 app.listen(process.env.PORT || 5000,()=>{
     console.log("Server Ready on 5000"); // Part #1 Point 5
